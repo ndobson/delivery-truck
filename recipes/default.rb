@@ -24,6 +24,12 @@ chef_gem 'chefspec' do
   version '4.1.1'
 end
 
+# Explain why!
+chef_gem "berkshelf" do
+  version '3.2.4'
+  action :install
+end
+
 # Temporary workaround until chefdk installs chef-sugar.
 chef_gem 'chef-sugar' do
   # We always ride the latest version of chef-sugar. This could prove dangerous
